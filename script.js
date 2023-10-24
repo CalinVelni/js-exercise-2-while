@@ -19,3 +19,18 @@ frase = frase.replace(parola1, parola2);
 alert(frase); 
 
 
+
+---- Il Validatore di Siti Web ----
+
+let url = prompt('Inserisci un url');
+if((url.startsWith('http://' || 'https://')) && url.endsWith('.com')){
+    alert('url valido');
+} else{
+    alert('url non valido');
+}
+
+
+
+
+
+
