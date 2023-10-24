@@ -31,6 +31,42 @@ if((url.startsWith('http://' || 'https://')) && url.endsWith('.com')){
 
 
 
+---- La Sfida del Lancio del Dado ----
+
+let vittoriePc = 0;
+let vittorieG = 0;
+let gioco = prompt('Vuoi giocare a dadi?')
+
+while (gioco == 'si' || gioco == 'Si' || gioco == 'SI') {
+
+    alert('Lancia il dado');
+
+    let dadoPc = Math.ceil(Math.random() * 6);
+    let dadoG = Math.ceil(Math.random() * 6);
+
+    alert(' TU: ' + dadoG + '  PC: ' + dadoPc);
+
+    if (dadoG > dadoPc) {
+        alert('Hai Vinto');
+        vittorieG++;
+    }
+
+    else if (dadoG < dadoPc) {
+        alert('Hai Perso');
+        vittoriePc++;
+    }
+
+    else {
+        alert('Pareggio');
+    }
+
+    alert('Punteggio: TU = ' + vittorieG + '  PC = ' + vittoriePc);
+    gioco = prompt('Vuoi continuare a giocare?')
+}
+
+
+
+
 
 
 
